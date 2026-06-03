@@ -13,19 +13,15 @@ export default function Pagination({
     <div>
       <button
         onClick={() => onPageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-      >
+        disabled={currentPage === 1}>
         Précédent
       </button>
-
       <span>
         Page {currentPage} / {totalPages}
       </span>
-
       <button
         onClick={() => onPageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-      >
+        disabled={currentPage === totalPages}>
         Suivant
       </button>
     </div>
